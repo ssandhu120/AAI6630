@@ -1,0 +1,16 @@
+,high,medium,sponsor
+brightness_mean,155.35,142.47,173.46
+contrast_std,61.13,79.21,70.15
+sharpness_laplacian,2526.62,12999.21,992.48
+white_bg_pct,30.04,31.15,43.08
+white_bg_compliance,0.4,0.33,0.33
+product_dominance_score,28.28,26.14,36.8
+text_density_pct,6.33,12.99,5.03
+clutter_score,4.87,7.24,3.56
+color_warmth,13.68,-3.65,33.9
+green_ratio,1.18,1.18,0.97
+saturation_mean,94.09,86.2,79.88
+symmetry_score,50.87,59.21,41.94
+dominant_color_1_pct,47.52,46.77,39.52
+ocr_word_count,22.48,0.0,28.17
+ocr_keyword_count,0.5,0.0,2.0
