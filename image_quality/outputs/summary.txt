@@ -1,0 +1,8 @@
+OpenCV Image Quality Pipeline Summary
+=====================================
+images_analyzed: 42
+status_counts: {'Review': 26, 'Pass': 15, 'Needs Improvement': 1}
+average_overall_quality_score: 76.38
+average_sharpness: 4249.9
+average_white_background_ratio: 0.171
+products_detected: ['B0002DINX6', 'B0002DIUVQ', 'B0002I9OIE', 'B001GY0NPG', 'B01J8JMFKG', 'B01K4SH5JW', 'B07TGDFPBN']
