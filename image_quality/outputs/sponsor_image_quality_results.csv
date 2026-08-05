@@ -1,0 +1,7 @@
+filename,asin,width,height,megapixels,min_dimension,aspect_ratio,brightness_mean,brightness_status,contrast_std,contrast_status,sharpness_laplacian_var,blur_flag,resolution_status,resolution_score,brightness_score,contrast_score,sharpness_score,overall_quality_score,quality_status,recommendations
+B07TGDFPBN_img01.jpg,B07TGDFPBN,1054,1414,1.49,1054,0.745,222.33,Acceptable,55.9,Acceptable,541.04,No,High Resolution,100.0,100.0,100.0,96.33,98.9,Pass,No major issue detected
+B07TGDFPBN_img02.jpg,B07TGDFPBN,1254,1254,1.573,1254,1.0,168.4,Acceptable,70.66,Acceptable,766.77,No,High Resolution,100.0,100.0,100.0,100.0,100.0,Pass,No major issue detected
+B07TGDFPBN_img03.jpg,B07TGDFPBN,1254,1254,1.573,1254,1.0,181.14,Acceptable,65.59,Acceptable,1137.76,No,High Resolution,100.0,100.0,100.0,100.0,100.0,Pass,No major issue detected
+B07TGDFPBN_img04.jpg,B07TGDFPBN,1254,1254,1.573,1254,1.0,140.6,Acceptable,84.67,Acceptable,989.28,No,High Resolution,100.0,100.0,100.0,100.0,100.0,Pass,No major issue detected
+B07TGDFPBN_img05.jpg,B07TGDFPBN,1254,1254,1.573,1254,1.0,174.97,Acceptable,65.56,Acceptable,949.39,No,High Resolution,100.0,100.0,100.0,100.0,100.0,Pass,No major issue detected
+B07TGDFPBN_img06.jpg,B07TGDFPBN,1254,1254,1.573,1254,1.0,153.3,Acceptable,78.5,Acceptable,866.09,No,High Resolution,100.0,100.0,100.0,100.0,100.0,Pass,No major issue detected

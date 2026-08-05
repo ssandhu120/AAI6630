@@ -1,22 +1,25 @@
 {
-  "total_uploaded_product_images": 60,
-  "unique_images_analyzed": 42,
-  "duplicate_images_skipped": 18,
-  "status_counts": {
-    "Review": 26,
-    "Pass": 15,
-    "Needs Improvement": 1
+  "scope": [
+    "brightness",
+    "contrast",
+    "sharpness/blur",
+    "resolution"
+  ],
+  "images_analyzed": 54,
+  "products_detected": 9,
+  "average_overall_quality_score": 88.71,
+  "median_overall_quality_score": 92.12,
+  "quality_status_counts": {
+    "Pass": 38,
+    "Review": 16
   },
-  "average_overall_quality_score": 76.38,
-  "average_sharpness": 4249.9,
-  "average_white_background_ratio": 0.171,
-  "products_detected": [
-    "B0002DINX6",
-    "B0002DIUVQ",
-    "B0002I9OIE",
-    "B001GY0NPG",
-    "B01J8JMFKG",
-    "B01K4SH5JW",
-    "B07TGDFPBN"
-  ]
+  "blurred_images": 1,
+  "low_resolution_images": 24,
+  "lighting_issues": 4,
+  "contrast_issues": 0,
+  "sponsor_asin": "B07TGDFPBN",
+  "sponsor_images_analyzed": 6,
+  "sponsor_average_quality_score": 99.82,
+  "sponsor_blurred_images": 0,
+  "sponsor_low_resolution_images": 0
 }

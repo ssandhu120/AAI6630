@@ -1,82 +1,70 @@
-# OpenCV Image Quality Analysis Pipeline
+# William's OpenCV Image Quality Analysis — Final Version
 
-This project analyzes Amazon product images for the XN Project: **Computer Vision for Product Image Optimization**.
+This folder contains **only William's assigned image-quality work** for the AAI 6630 XN project.
 
-## Project Purpose
+## Included scope
 
-The pipeline evaluates image quality and composition using OpenCV-based computer vision metrics. The goal is to create an image quality scorecard that can help identify product images that may need improvement for e-commerce use.
+The pipeline measures four explainable image-quality areas:
 
-## Dataset
+1. **Brightness** — identifies images that may be too dark or overexposed.
+2. **Contrast** — measures grayscale variation and flags unusually low or harsh contrast.
+3. **Sharpness / blur** — uses Laplacian variance after size normalization.
+4. **Resolution** — evaluates the shortest image dimension and megapixel count.
 
-The current folder includes 42 unique product images. During upload, 60 product image files were received, but 18 were exact duplicates and were skipped from the final analysis set.
+It also creates:
 
-## Metrics Calculated
+- component scores and an overall image-quality score;
+- basic recommendations for each image;
+- CSV outputs and presentation-ready charts;
+- a manual-validation worksheet for checking automated labels.
 
-The pipeline calculates:
+## Intentionally excluded
 
-- Image width and height
-- Megapixels
-- Aspect ratio
-- Brightness
-- Contrast
-- Sharpness using Laplacian variance
-- Blur flag
-- White background ratio
-- Edge density
-- Colorfulness
-- Saturation
-- Approximate content bounding box area ratio
-- Approximate centering score
-- Overall quality score
-- Pass / Review / Needs Improvement status
-- Improvement recommendations
+These items belong to other team modules or the group-level analysis and are **not implemented here**:
 
-## How to Run
+- OCR and keyword extraction;
+- color-tone or color-consistency analysis;
+- accessibility simulation;
+- object detection or semantic segmentation;
+- Random Forest feature importance;
+- performance-tier or sponsor-versus-competitor benchmarking;
+- image augmentation.
 
-Install the dependencies:
+## Folder structure
 
-```bash
-pip install -r requirements.txt
+```text
+william_final_image_quality_project/
+├── images/
+├── outputs/
+├── william_image_quality_pipeline.py
+├── requirements.txt
+├── run_pipeline.bat
+├── METHODS_AND_PRESENTATION_NOTES.md
+└── README.md
 ```
 
-Run the pipeline:
+## Installation
 
-```bash
-python image_quality_pipeline.py
+Open PowerShell or Command Prompt in this folder and run:
+
+```powershell
+python -m pip install -r requirements.txt
 ```
 
-Or:
+## Run
 
-```bash
-py image_quality_pipeline.py
+```powershell
+python william_image_quality_pipeline.py
 ```
 
-The output files will be saved in the `outputs` folder.
+Or double-click `run_pipeline.bat` on Windows.
 
-## Output Files
+The main output is:
 
-- `image_quality_results.csv`
-- `overall_quality_score_histogram.png`
-- `sharpness_histogram.png`
-- `white_background_ratio_histogram.png`
-- `quality_status_counts.png`
-- `average_score_by_product.png`
-- `summary.txt`
+```text
+outputs/image_quality_results.csv
+```
 
-## Current Results
+## Important interpretation note
 
-The first run analyzed 42 unique images.
-
-Status distribution:
-
-- Pass: 15
-- Review: 26
-- Needs Improvement: 1
-
-Average overall image quality score: 76.38
-
-## Notes
-
-The product occupancy and centering metrics use heuristic OpenCV rules based on non-white pixels. These are useful for initial screening but should be interpreted as approximate metrics rather than perfect object detection results.
-
-For future improvements, this pipeline can be extended with OCR, CLIP, ResNet, or YOLO-based product localization.
+The thresholds and overall score are explainable screening rules. They help identify images that deserve review, but they do not prove that an image causes stronger Amazon sales or engagement. The `manual_validation_template.csv` file should be used to compare automated labels with human observations.
