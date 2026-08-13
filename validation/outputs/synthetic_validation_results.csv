@@ -1,0 +1,8 @@
+test_image,expected_brightness,actual_brightness,brightness_test,expected_blur,actual_blur,blur_test,expected_resolution,actual_resolution,resolution_test,brightness_mean,contrast_std,sharpness_laplacian_var,overall_quality_score,quality_status,overall_test_result
+normal_high_resolution.jpg,Acceptable,Acceptable,PASS,No,No,PASS,High Resolution,High Resolution,PASS,158.4,54.39,92.07,80.12,Pass,PASS
+too_dark.jpg,Too Dark,Too Dark,PASS,Yes,Yes,PASS,High Resolution,High Resolution,PASS,50.0,0.0,0.0,26.92,Needs Improvement,PASS
+overexposed.jpg,Overexposed,Overexposed,PASS,Yes,Yes,PASS,High Resolution,High Resolution,PASS,245.0,0.0,0.0,30.0,Needs Improvement,PASS
+low_resolution.jpg,Acceptable,Acceptable,PASS,No,No,PASS,Low Resolution,Low Resolution,PASS,125.11,49.74,181.67,67.31,Review,PASS
+moderate_resolution.jpg,Acceptable,Acceptable,PASS,No,No,PASS,Moderate Resolution,Moderate Resolution,PASS,113.65,54.98,99.28,74.17,Review,PASS
+sharp_checkerboard.jpg,Acceptable,Acceptable,PASS,No,No,PASS,High Resolution,High Resolution,PASS,127.5,127.42,6463.71,81.29,Pass,PASS
+blurred_checkerboard.jpg,Acceptable,Acceptable,PASS,Yes,Yes,PASS,High Resolution,High Resolution,PASS,127.5,39.67,6.85,70.0,Review,PASS
